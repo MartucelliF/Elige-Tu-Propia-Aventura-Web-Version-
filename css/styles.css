@@ -160,6 +160,7 @@ body{
         grid-template-rows: auto;
         justify-content: space-between;
         position: relative;
+        padding-bottom: 100px;
     }
     .rectanguloDecision{
         border: yellow 5px solid;
@@ -168,32 +169,26 @@ body{
         height: 500px;
         opacity: 0; /*Inicia invisible*/
         animation-fill-mode: forwards; /*Mantiene el estado final (visible) después de la animación*/
-        animation: aparecer 3s ease-in-out 25s forwards; /*Tarda 1 segundo en aparecer, se demora 5ms en tener 1 de opacidad*/
+        animation: aparecer 1s ease-in-out 1s forwards; /*Tarda 1 segundo en aparecer, se demora 5ms en tener 1 de opacidad*/
+    }.textoInformativoDecision{
+        font: 10px;
+        color: black;
+        height: 415px;
+        margin-top: -415px;
+        opacity: 0;
+        background-color: rgb(211, 169, 97);
+    }.rectanguloDecision:hover .textoInformativoDecision{
+        animation-fill-mode: forwards; 
+        animation: aparecer 1s ease-in-out 0.1s forwards;
     }
-    span.parrafoDecision1{
+    span.parrafoDecision{
         font-family: deadfont;
         text-align: center;
         opacity: 0;
-        color: black;
+        color: rgb(211, 169, 97);
         animation-fill-mode: forwards; 
-        animation: aparecer 3s ease-in-out 1s forwards;
-        font-size: 30px;
-    }span.parrafoDecision2{
-        font-family: deadfont;
-        text-align: center;
-        opacity: 0;
-        color: black;
-        animation-fill-mode: forwards; 
-        animation: aparecer 3s ease-in-out 10s forwards;
-        font-size: 30px;
-    }span.parrafoDecision3{
-        font-family: deadfont;
-        text-align: center;
-        opacity: 0;
-        color: black;
-        animation-fill-mode: forwards; 
-        animation: aparecer 3s ease-in-out 20s forwards;
-        font-size: 30px;
+        animation: aparecer 3s ease-in-out 1 forwards;
+        font-size: 20px;
     }
     .textoDecision{
         text-align: center;
@@ -205,7 +200,7 @@ body{
     }
     .imagenDecision{
         margin-top: 50px;
-        height: 416px;
+        height: 412px;
         background-size: cover;
     }
     .ubicarbuttonDecision{
@@ -233,12 +228,11 @@ body{
     }.buttonDecision span.deadfont:hover {
         color: yellow; /* Color que el texto tomará al pasar el mouse sobre él */
     }
-    span.textoInformativoDecision{
-        color: rgb(211, 169, 97);
+    .textConsejoDecision{
         font-family: deadfont;
+        color: rgb(211, 169, 97);
+        font-size: 20px;
         text-align: center;
-        opacity: 0; /*Inicia invisible*/
-        animation-fill-mode: forwards;
-        animation: aparecer 3s ease-in-out 25s forwards;
     }
+
     /*------------------------------------------------------------------*/
