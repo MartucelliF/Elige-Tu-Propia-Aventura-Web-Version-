@@ -180,6 +180,9 @@ body{
     }.rectanguloDecision:hover .textoInformativoDecision{
         animation-fill-mode: forwards; 
         animation: aparecer 1s ease-in-out 0.1s forwards;
+    }.rectanguloDecision:hover .textoInformativoDecision h3{
+        text-align: center;
+        margin-top: 10px;
     }
     span.parrafoDecision{
         font-family: deadfont;
@@ -225,7 +228,7 @@ body{
         color: rgb(211, 169, 97);
         font-size: 40px;
         transition: 0.8s;
-    }.buttonDecision span.deadfont:hover {
+    }.buttonDecision:hover span.deadfont {
         color: yellow; /* Color que el texto tomará al pasar el mouse sobre él */
     }
     .textConsejoDecision{
